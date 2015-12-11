@@ -1,8 +1,9 @@
 From alpine:latest
 MAINTAINER Lyndon li <snakeliwei@gmail.com>
 
-RUN apk update && apk upgrade && \
-    apk add --update bash curl tar gpg && \
+RUN apk update && \
+    apk upgrade && \
+    apk add --update bash curl tar && \
     rm -rf /var/cache/apk/*
 
 #RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
