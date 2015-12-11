@@ -1,4 +1,4 @@
-M alpine:3.2
+From alpine:3.2
 MAINTAINER Lyndon li <snakeliwei@gmail.com>
 
 RUN apk update && apk upgrade && \
